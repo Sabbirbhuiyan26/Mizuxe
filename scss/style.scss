@@ -1,0 +1,119 @@
+$paste-color: #3292ac;
+
+body{
+    margin-top: 90px;
+}
+
+.navbar {
+    box-shadow: 2px 0px 5px 2px $paste-color;
+    background: #ffffff;
+    opacity: 0.9;
+    
+    .nav-item{
+        font-size: 1.4rem;
+        padding-right: 20px;
+
+        .nav-link{
+            color: #252525;
+        }
+        .nav-link:hover{
+            color: $paste-color;
+            transition: all 0.3s ease-out;
+        }
+    }
+    .nav-item:last-child{
+        padding-right: 0px;
+    }
+}
+
+#home{
+    background-image: url(../Image/mountains.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    min-height: 600px;
+    position: relative;
+
+    .paste-overlay{
+        background: rgba( 50, 146, 156, 0.7 );
+        min-height: 600px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+}
+
+#subscribe{
+    background-color: #252525;
+
+}
+
+#authors{
+    img{
+        margin-top: -50px;
+    }
+
+    .card{
+        transition: all 0.3s ease-out;
+    }
+
+    .fab{
+        font-size: 23px;
+        color: #3292ac;
+        transition: all 0.3s ease-out;
+    }
+
+    .card:hover{
+        background-color: #3292ac;
+        color: #ffffff;
+
+        .fab{
+            color: #ffffff;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:767px){
+    #home h1{
+        font-size: 40px;
+    }
+}
+
+@media (max-width:767px){
+    #subscribe input{
+        margin-bottom: 5px;
+    } 
+}
+
+@media (max-width:767px){
+    #about h1{
+        font-size: 40px;
+    }
+}
+
+@media (max-width:767px){
+    #authors{
+        h1{
+            font-size: 40px;
+        }
+    }
+}
+
+@media (max-width:767px){
+    #contact{
+        h1{
+            font-size: 40px;
+        }
+    }
+}
